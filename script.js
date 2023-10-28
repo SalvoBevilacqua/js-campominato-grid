@@ -31,13 +31,13 @@ play.addEventListener("click", function()
 function newGrid(width, totOfCell, container) {
     container.innerHTML = "";
     for (let i = 1; i < totOfCell + 1; i++) {
-        const newCell = createGrid10([i], width);
+        const newCell = createGrid([i], width);
         newCell.addEventListener("click", onClick)
         container.append(newCell);
     }
 }
 
-function createGrid10(numberOfCells, string) {
+function createGrid(numberOfCells, string) {
     const cell = document.createElement("div");
     cell.classList.add(string);
     cell.innerHTML = numberOfCells;

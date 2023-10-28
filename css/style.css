@@ -45,7 +45,7 @@ main {
 }
 
 .container {
-    width: 40%;
+    width: 50%;
     margin: 0 auto;
     background-color: blue;
     display: flex;
