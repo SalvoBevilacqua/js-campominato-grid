@@ -8,6 +8,11 @@ img {
     max-width: 100%;
 }
 
+/* ROOT */
+:root {
+    --background: rgb(172, 240, 252);
+}
+
 /* HEADER */
 header {
     padding: 0 2rem;
@@ -19,6 +24,12 @@ header {
     align-items: center;
 }
 
+header > div {
+    display: flex;
+    gap: 2rem;
+    align-items: baseline;
+}
+
 button {
     padding: .2rem 1rem;
 }
@@ -27,7 +38,7 @@ button {
 main {
     width: 100%;
     height: calc(100vh - 160px);
-    background-color: aquamarine;
+    background-color: var(--background);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -63,7 +74,8 @@ main {
 }
 
 .ciano {
-    background-color: aqua;
+    background-color: var(--background);
+    color: white;
 }
 
 /* FOOTER */
