@@ -4,13 +4,13 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-
 /* ROOT */
 :root {
     --background: rgb(172, 240, 252);
+}
+
+body {
+    font-family: 'Exo 2', sans-serif;
 }
 
 /* HEADER */
@@ -26,8 +26,12 @@ header {
 
 header > div {
     display: flex;
-    gap: 2rem;
-    align-items: baseline;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+img {
+    width: 70px;
 }
 
 button {
@@ -45,11 +49,12 @@ main {
 }
 
 .container {
-    width: 50%;
+    height: 90%;
+    aspect-ratio: 1;
     margin: 0 auto;
-    background-color: blue;
     display: flex;
     flex-wrap: wrap;
+    overflow: auto;
 }
 
 .cell10 {
@@ -73,7 +78,7 @@ main {
     background-color: whitesmoke;
 }
 
-.ciano {
+.afterClick {
     background-color: var(--background);
     color: white;
 }

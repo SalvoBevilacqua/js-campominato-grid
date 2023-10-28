@@ -45,6 +45,6 @@ function createGrid(numberOfCells, string) {
 }
 
 function onClick() {
-    this.classList.add("ciano");
+    this.classList.add("afterClick");
     console.log(this.innerHTML);
 }
