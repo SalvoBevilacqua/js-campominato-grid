@@ -46,5 +46,6 @@ function createGrid(numberOfCells, string) {
 
 function onClick() {
     this.classList.add("afterClick");
-    console.log(this.innerHTML);
+    const textCell = this.textContent;
+    console.log(textCell);
 }

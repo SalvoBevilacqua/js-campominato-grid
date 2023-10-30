@@ -97,6 +97,7 @@ main {
     align-items: center;
     gap: 3rem;
     font-size: xx-large;
+    text-align: center;
 }
 
 /* FOOTER */
